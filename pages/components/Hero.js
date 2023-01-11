@@ -15,7 +15,7 @@ function Hero() {
   return (
     <div>
       <section className="home-view-container">
-        <div className="hero-content-wrapper mt-20 flex flex-row items-center justify-center gap-24">
+        <div className="hero-content-wrapper mt-12 md:flex md:flex-row md:items-center md:justify-center md:gap-20 ml-2">
           <div className="profile-picture-wrapper w-fit h-fit">
             <img
               src={
