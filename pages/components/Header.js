@@ -6,10 +6,10 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full top-0 left-0 right-0 z-10">
+      <nav className="w-full top-0 left-0 right-0 z-10 py-5">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 md:py-5 md:block ml-5">
               {/* LOGO */}
               <Link href="/">
                 <h2 className="">kirtanchandak</h2>
@@ -52,20 +52,24 @@ function Header() {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-0 py-2 md:px-6 text-center text-gray-500 hover:text-gray-600">
+                <li className="pb-0 py-2 md:px-6 text-center text-gray-500 hover:text-gray-600 ">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     projects
                   </Link>
                 </li>
-                <li className="pb-1 py-2 md:px-6 text-center text-gray-500 hover:text-gray-600">
-                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-0 py-2 md:px-6 text-center text-gray-500 hover:text-gray-600 font-[100]">
+                  <Link
+                    href="/"
+                    onClick={() => setNavbar(!navbar)}
+                    className=""
+                  >
                     hackthons and community
                   </Link>
                 </li>
                 <li className="pb-1 py-2 md:px-6 text-center">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     <button
-                      className="px-3 py-1.5 rounded-full bg-gray-800 hover:bg-gray-700 text-sm text-white"
+                      className="px-3 py-1.5 rounded-full bg-gray-800 hover:bg-gray-700 text-white"
                       onClick={() =>
                         window.open("https://github.com/kirtanchandak")
                       }
